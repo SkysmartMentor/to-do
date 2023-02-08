@@ -6,17 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body class="body">
     <div id="app">
-        <h1>To-Do App</h1>
-        <form>
-            <input type="text" id="task" placeholder="Add a task">
-            <button id="add">Add</button>
+        <h1 class="title">To-Do App</h1>
+        <form class="form">
+            <input type="text" class="form-task" placeholder="Add a task">
+            <button id="add" class="button">✔️</button>
         </form>
         <ul id="task-list"></ul>
     </div>
+
+    <template id="template">
+        <li class="item">
+            <input type="text" class="item__text" value=""></input>
+            <button class="item__delete">❌</button>
+        </li>
+    </template>
+
     <script src="index.js"></script>
 </body>
 
